@@ -18,8 +18,8 @@ body{
     align-items: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    width: 300px;
-    padding: 20px;   
+    width: 375px;
+    padding: 15px;   
 }
 
 .text-content{
@@ -29,8 +29,7 @@ body{
 }
 
 .qr-code{
-    width: 95%;
-    height: 95%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -43,6 +42,7 @@ h1{
 
 p{
     color: hsl(216, 15%, 48%);
+    font-size: 14px;
     font-weight: 400;
 }
 
