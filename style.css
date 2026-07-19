@@ -1,54 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  --px-to-rem: 0.0625rem; /* This is 1/16 */
+
+  --space-40: calc(40 * var(--px-to-rem));
+  --space-24: calc(24 * var(--px-to-rem));
+  --space-16: calc(16 * var(--px-to-rem));
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(212, 45%, 89%);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    width: 375px;
-    padding: 16px;   
+body {
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
-.text-content{
-    font-family: "Outfit", sans-serif;
-    text-align: center;
-    margin: 20px 0;
+main {
+  background-color: var(--slate-300);
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
 }
 
-.qr-code{
-    width: 100%;
-    height: 80%;
-    border-radius: 10px;
+.card {
+  border-radius: 20px;
+  background-color: var(--white);
+  max-width: min(100%, 320px);
+  padding: var(--space-16);
+  padding-bottom: var(--space-40);
+  box-shadow: 0 25px 25px rgb(0 0 0 / 0.0477);
+  text-align: center;
 }
 
-h1{
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: hsl(218, 44%, 22%);
+.qr-code {
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
 }
 
-p{
-    color: hsl(216, 15%, 48%);
-    font-size: 20px;
-    font-weight: 400;
+.heading {
+  margin-block: var(--space-24) var(--space-16);
+  font-size: calc(22 * var(--px-to-rem));
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: var(--slate-900);
 }
 
-@media (max-width: 375px){
-    .container{
-        width: 90%;
-    }
+.text {
+  margin-inline: var(--space-16);
+  font-size: calc(15 * var(--px-to-rem));
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: var(--slate-500);
 }

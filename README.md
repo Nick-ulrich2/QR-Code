@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -12,93 +12,70 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Modifications and Improvements](#modifications-and-improvements)
+  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
 ## Overview
 
 ### Screenshot
 
-![QR Code Component Solution](./preview.jpg)
+- Solution in mobile 📱:
+
+![QR code component in mobile](./design/mobile-design.jpg)
+
+- Solution in desktop 💻:
+
+![QR code component in desktop](./design/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/Nick-ulrich2/QR-Code)
-- Live Site URL: [Live Demo](https://qr-code-72v82es37-mvongo-nfoto-hudes-ulrich-s-projects.vercel.app/)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/qr-code-component-fIiOcgsKtu)
+- [Live Site](https://qr-code-snowy-zeta.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [Google Fonts](https://fonts.google.com/) - Outfit font family
+- CSS custom properties - for managing colors and spacing consistently
+- CSS Grid - to center the card component
+- CSS Reset - rules adapted from Josh Comeau's ["A Modern CSS Reset"](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 ### What I learned
 
-While working through this challenge, I reinforced several key concepts:
+While this specific challenge was straightforward for me to complete, it served as an excellent opportunity to focus on writing clean and semantic HTML code. I prioritized accessibility and clarity by implementing specific semantic tags:
 
-1. **CSS Flexbox** - Effectively centering content both vertically and horizontally using flexbox properties
-2. **Responsive Design** - Building responsive layouts that work across mobile (375px) and desktop (1440px) viewports
-3. **Color Management** - Using HSL color values for better readability and maintainability
-4. **CSS Best Practices** - Proper use of margins, padding, and border-radius for polished UI components
+- `<main>` to identify the primary content
+- `<figure>` with `<figcaption>` to wrap the QR code and its instructions, which makes the relationship between the image and its caption clear to screen readers
+- `<h1>` as the primary heading for the card content, placed inside the figcaption to describe the main purpose of the QR code
 
-Key CSS patterns used:
-
-```css
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-```
+By being intentional about these structural choices, I deepened my understanding of how semantic HTML creates a better experience for all users, especially those using assistive technologies.
 
 ### Continued development
 
-Future improvements could include:
+Moving forward into my next projects, I want to focus on a mix of expanding my technical toolkit and refining my foundational skills:
 
-- Testing across more browsers for compatibility
-- Adding hover and focus states for better interactivity
-- Implementing additional responsive breakpoints for tablets
-- Exploring CSS Grid for more complex layouts
+- **Micro-interactions and Animations**: While I focus on clean layout structure, I want to start incorporating subtle micro-interactions (like smooth hover effects, active states, and transition animations). This will help elevate my projects from static pages to more engaging, dynamic user experiences.
+
+- **Deepening Accessibility**: Accessibility is a skill I am constantly looking to refine. I want to continue pushing myself in future projects to ensure my semantic HTML translates perfectly to screen readers and keyboard navigation.
+
+- **The "AI Mentor" Workflow**: This project proved how valuable continuous, guided interaction is for my growth. I plan to keep using this conversational approach to uncover gaps in my understanding of the fundamentals. Creating a comfortable space to ask "silly" questions is something I want to maintain to ensure I am never building on shaky foundations.
 
 ### Useful resources
 
-- [MDN Web Docs - Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - Comprehensive guide to flexbox
-- [CSS-Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Visual and practical reference
-- [Frontend Mentor - Learning Paths](https://www.frontendmentor.io/learning-paths) - Structured learning resources
+- [A Modern CSS Reset by Josh Comeau](https://www.joshwcomeau.com/css/custom-css-reset/) - This was essential for clearing out default browser styles before implementing my own layout. I adapted rules from this reset to ensure a consistent, predictable baseline across different browsers.
+- [AGENTS.md](./AGENTS.md) - Reading this file gave me a clear framework on how to effectively interact with the AI agent. It helped me shift my mindset from treating AI as a "code generator" to treating it as a true mentor, someone to ask silly questions, challenge my assumptions, and encourage me to think critically rather than just handing over the solution.
+- [MDN Web Docs](https://developer.mozilla.org/) - My absolute go-to for diving deeper into specific CSS properties. For this challenge, it was helpful to get more details on viewport heights, `box-shadow` values, and centering elements using `display: grid` and `place-items: center`.
 
+### AI Collaboration
 
+For this project, I collaborated initially with codex-vsc and once I reached the free tier limits, I decided to continue with Claude as I enjoyed the personalized coding mentor experience. I settle on using Claude as I heard good comments of its models and I was curious about the interaction with it.
 
-## Modifications and Improvements
-
-The following CSS improvements have been implemented to refine the component's appearance and match design specifications more closely:
-
-### CSS Changes Made:
-
-1. **QR Code Container Sizing**
-   - Changed `.qr-code` width from `100%` to `95%` for better visual balance within the container
-   - Added `.qr-code` height property set to `95%` to maintain proportional dimensions
-
-2. **Text Content Spacing**
-   - Adjusted `.text-content` margin from `20px 0` to `15px 0` for tighter, more refined spacing between elements
-
-3. **Paragraph Typography**
-   - Added explicit `font-weight: 400` to the `p` selector to ensure consistent font rendering and compliance with the style guide
-
-These changes ensure the component adheres to the design specifications outlined in the style guide while maintaining proper visual hierarchy and spacing.
+- I asked questions, even the ones that felt "silly", and walk through my thought process.
+- The realization that AI can act as a patient, always-available mentor was a complete game-changer. It created a safe space to ask fundamental questions, which dramatically reinforced my understanding and kept my momentum going.
+- Since the coding challenge itself was relatively simple, it allowed me to focus purely on the conversational and conceptual side of learning.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://www.github.com/yourusername)
+- Website - (https://mvongo-nfoto-hudes-ulrich.vercel.app/)
+- [LinkedIn](www.linkedin.com/in/ulrich-mvongo-3ba87332a)
