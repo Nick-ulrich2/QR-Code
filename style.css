@@ -45,3 +45,9 @@ p{
     color: hsl(216, 15%, 48%);
     font-weight: 400;
 }
+
+@media (max-width: 375px){
+    .container{
+        width: 90%;
+    }
+}

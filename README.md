@@ -54,6 +54,24 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
 6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
+## Modifications and Improvements
+
+The following CSS improvements have been implemented to refine the component's appearance and match design specifications more closely:
+
+### CSS Changes Made:
+
+1. **QR Code Container Sizing**
+   - Changed `.qr-code` width from `100%` to `95%` for better visual balance within the container
+   - Added `.qr-code` height property set to `95%` to maintain proportional dimensions
+
+2. **Text Content Spacing**
+   - Adjusted `.text-content` margin from `20px 0` to `15px 0` for tighter, more refined spacing between elements
+
+3. **Paragraph Typography**
+   - Added explicit `font-weight: 400` to the `p` selector to ensure consistent font rendering and compliance with the style guide
+
+These changes ensure the component adheres to the design specifications outlined in the style guide while maintaining proper visual hierarchy and spacing.
+
 ## Deploying your project
 
 As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
